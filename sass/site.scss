@@ -33,14 +33,13 @@ body {
 pre {
     padding: 10px;
     overflow-x: scroll;
+    background-color: #2b303b;
 }
 
 code {
     color: #e74c3c;
-    border: 1px solid #ecf0f1;
-    padding: 5px;
+    padding: 2px;
     border-radius: 5px;
-    background: rgba(236, 240, 241, 0.19);
 }
 
 .header {
@@ -85,6 +84,10 @@ code {
     @media screen and (min-width: 900px) {
         width: 65%;
         float: left;
+    }
+
+    .description {
+        padding-bottom: 5px;
     }
 }
 

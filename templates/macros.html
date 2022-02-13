@@ -11,10 +11,11 @@
             {% if page.taxonomies.categories %}<span class="category">{{page.taxonomies.categories[0]}}</span>{% endif %}
             <h2 class="title" itemprop="headline">{{page.title}}</h2>
             <span class="description">{{page.description}}</span>
-
-            <address itemprop="author" itemscope itemtype="https://schema.org/Person">
-                <span itemprop="name">{{page.extra.author}}</span>
-            </address>
+            {% if page.extra.author %}
+                <address itemprop="author" itemscope itemtype="https://schema.org/Person">
+                    <span itemprop="name">{{page.extra.author}}</span>
+                </address>
+            {% endif %}
             <div class="extra">
                 <span itemprop="datePublished">{{ page.date | date(format="%d/%m/%Y") }}</span>
                 - {{ page.reading_time }} {{ config.extra.label_minutes }}
