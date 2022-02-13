@@ -35,11 +35,7 @@
                     <a href="{{ get_taxonomy_url(kind="tags", name=tag) }}">{{ tag }}</a>
                     {% if page.taxonomies.tags | length > 1 %}
                         {% if loop.index != page.taxonomies.tags | length %}
-                            {% if loop.index == page.taxonomies.tags | length - 1 %}
-                                e
-                            {% else %}
-                                ,
-                            {% endif %}
+                        ,
                         {% endif %}
                     {% endif %}
                 {% endfor %}
